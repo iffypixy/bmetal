@@ -1,14 +1,11 @@
 {
 	"name": "bmetal",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"version": "0.1.0",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier --write \"**/*.{js,ts,jsx,tsx,mjs,cjs,json,css,scss,sass,html}\""
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "Ansat Euler <iffypixy@gmail.com>",
+	"license": "MIT",
 	"devDependencies": {
 		"@commitlint/cli": "^19.4.0",
 		"@commitlint/config-conventional": "^19.2.2",
