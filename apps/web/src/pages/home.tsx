@@ -1,3 +1,5 @@
+import {Link} from "wouter";
+
 import {
 	Button,
 	ContentTemplate,
@@ -12,7 +14,6 @@ import shelf from "@shared/assets/shelf.png";
 import toolkit from "@shared/assets/toolkit.png";
 import catalogue from "@shared/assets/catalogue.png";
 import rack from "@shared/assets/rack.jpeg";
-import {Link} from "wouter";
 
 export const HomePage: React.FC = () => {
 	return (
@@ -35,9 +36,11 @@ export const HomePage: React.FC = () => {
 						`}
 					</p>
 
-					<Button color="secondary" className="w-fit py-2">
-						Подробнее
-					</Button>
+					<Link to="/about">
+						<Button color="secondary" className="w-fit py-2">
+							Подробнее
+						</Button>
+					</Link>
 				</div>
 
 				<img
