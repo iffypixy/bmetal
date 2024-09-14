@@ -7,7 +7,6 @@ import {
 	Button,
 	Container,
 	Dialog,
-	DialogClose,
 	DialogContent,
 	DialogTrigger,
 	Icon,

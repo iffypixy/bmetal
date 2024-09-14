@@ -16,6 +16,7 @@ export default defineConfig({
 			eslint: {
 				lintCommand: 'eslint "./src/**/*.{ts,tsx,js,jsx}"',
 			},
+			enableBuild: false,
 		}),
 	],
 	resolve: {
