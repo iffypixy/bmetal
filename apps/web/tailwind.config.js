@@ -3,7 +3,21 @@ export default {
 	content: ["./src/**/*.{html,tsx,jsx,ts,js}"],
 	theme: {
 		extend: {
-			fontFamily: {},
+			colors: {
+				primary: {
+					DEFAULT: "#293e80",
+					contrast: "#fdfdfd",
+				},
+				secondary: "#eac400",
+				paper: {
+					primary: "#fdfdfd",
+					secondary: "#f4f7fd",
+					contrast: "rgb(50 50 50 / <alpha-value>)",
+				},
+			},
+			fontFamily: {
+				montserrat: '"Montserrat", sans-serif',
+			},
 			boxShadow: {
 				"even-sm": "0 0 0.6rem rgb(0 0 0 / 0.1)",
 				"even-md": "0 0 1.4rem rgb(0 0 0 / 0.1)",

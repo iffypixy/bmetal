@@ -1,9 +1,38 @@
-import {useEffect} from "react";
+import {Switch, Route, Router as Wouter} from "wouter";
+
+import {
+	HomePage,
+	ListPage,
+	CataloguePage,
+	ProductPage,
+	CartPage,
+	OrderPage,
+	AboutPage,
+	TermsPage,
+	OrderAndDeliveryPage,
+	CertificatesPage,
+	CmsRouter,
+} from "@pages/index";
 
 export const Router: React.FC = () => {
-	useEffect(() => {
-		console.log(123);
-	});
-
-	return <h1>Hi! :)</h1>;
+	return (
+		<Wouter>
+			<Switch>
+				<Route path="/" component={HomePage} />
+				<Route path="/list" component={ListPage} />
+				<Route path="/products/:productId" component={ProductPage} />
+				<Route path="/cart" component={CartPage} />
+				<Route path="/cart/order" component={OrderPage} />
+				<Route path="/catalogue" component={CataloguePage} />
+				<Route path="/about" component={AboutPage} />
+				<Route
+					path="/order-n-delivery"
+					component={OrderAndDeliveryPage}
+				/>
+				<Route path="/certificates" component={CertificatesPage} />
+				<Route path="/terms" component={TermsPage} />
+				<Route path="/cms" component={CmsRouter} nest />
+			</Switch>
+		</Wouter>
+	);
 };
